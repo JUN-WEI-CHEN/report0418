@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Welcome to My Interactive Website!</h1>
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="toggleTheme">Toggle Theme 🌗</button>
+  </header>
+
+  <main>
+    <section id="about" class="section fade-in">
+      <h2>About Me</h2>
+      <p>Hi! I'm learning to build interactive websites using jQuery. 🎉</p>
+    </section>
+
+    <section id="projects" class="section fade-in">
+      <h2>My Projects</h2>
+      <button id="toggleInfo">Show More Info</button>
+      <p id="extraInfo" class="hidden">This is extra content powered by jQuery!</p>
+    </section>
+
+    <section id="contact" class="section fade-in">
+      <h2>Leave a Message</h2>
+      <form id="contactForm">
+        <input type="text" id="username" placeholder="Your Name" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="submittedMessage" class="hidden"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with ❤️ by Me</p>
+  </footer>
+
+  <canvas id="sparkleCanvas"></canvas>
+</body>
+</html>
